@@ -6,7 +6,7 @@ int main(void){
 	PWM_Init(&pwm_pal_2_instance,&pwm_pal_2_configs);
 
 	for (;;){
-		PWM_UpdateDuty(&pwm_pal_1_instance,0u,1000);
+		//PWM_UpdateDuty(&pwm_pal_1_instance,0u,1000);
 		OSIF_TimeDelay(100);
 		PWM_UpdateDuty(&pwm_pal_1_instance,0u,0);
 		PWM_UpdateDuty(&pwm_pal_1_instance,1u,1000);
